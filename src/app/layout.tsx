@@ -6,8 +6,8 @@ import Navbar from '../components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Ideas Tracker',
-    description: 'Track your side project ideas',
+    title: 'ComicUntiy',
+    description: 'Comics for the Community',
 };
 
 export default function RootLayout({
