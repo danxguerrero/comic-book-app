@@ -1,12 +1,10 @@
 'use client'
-import { useAuth } from '../../hooks/useAuth';
+
+import { useAuth } from '../hooks/useAuth';
 import Link from 'next/link';
 
 export default function Home() {
-  const { current, login, logout } = useAuth();
-  if (current) {
-      console.log(current)
-  }
+  const { current, logout } = useAuth();
 
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">

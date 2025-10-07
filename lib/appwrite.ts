@@ -1,5 +1,3 @@
-// lib/appwrite.ts
-
 import { Client, Account, TablesDB } from "appwrite";
 
 const client = new Client();

@@ -1,7 +1,7 @@
 // hooks/useAuth.ts
 
 import { useState, useEffect } from 'react';
-import { account } from '../lib/appwrite';
+import { account } from '../../lib/appwrite';
 import { ID } from 'appwrite';
 import type { Models } from 'appwrite';
 import { useRouter } from 'next/navigation';
