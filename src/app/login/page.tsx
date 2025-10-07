@@ -1,8 +1,7 @@
-// src/app/login/page.tsx
 'use client';
 
 import { useState } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import AuthForm from '../../components/AuthForm';
 
 export default function LoginPage() {

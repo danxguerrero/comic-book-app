@@ -1,5 +1,3 @@
-// src/components/AuthForm.tsx
-
 interface AuthFormProps {
     handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void | Promise<void>;
     submitType: string;
