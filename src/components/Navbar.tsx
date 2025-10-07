@@ -7,13 +7,12 @@ export default function Navbar() {
     const { current, logout } = useAuth();
 
     return (
-        <nav className="u-padding-inline-end-0 flex justify-between items-center">
+        <nav className="u-padding-inline-end-0 flex justify-between items-center p-3">
             <h3 className="u-stretch eyebrow-heading-1">Comic Book</h3>
             {current ? (
                 <div className="main-header-end u-margin-inline-end-16 flex gap-4">
-                    <p>{current.email}</p>
                     <button 
-                        className="button" 
+                        className="border-2 rounded-lg p-2 hover:bg-gray-200 hover:text-gray-500 hover:border-gray-500 active:bg-gray-500 active:text-gray-300 active:border-gray-300" 
                         type="button" 
                         onClick={logout}
                     >
@@ -23,7 +22,7 @@ export default function Navbar() {
             ) : (
                 <Link 
                     href="/login" 
-                    className="button u-margin-inline-end-16"
+                    className="u-margin-inline-end-16 border-2 rounded-lg p-2 hover:bg-gray-200 hover:text-black hover:border-2 hover:border-gray-500"
                 >
                     Login
                 </Link>
