@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <nav className="u-padding-inline-end-0 flex justify-between items-center p-3">
-            <h3 className="u-stretch eyebrow-heading-1">Comic Book</h3>
+            <h3 className="u-stretch eyebrow-heading-1">ComicUnity</h3>
             {current ? (
                 <div className="main-header-end u-margin-inline-end-16 flex gap-4">
                     <button 
