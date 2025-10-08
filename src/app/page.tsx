@@ -7,18 +7,8 @@ export default function Home() {
   const { current, logout } = useAuth();
 
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        {current ? (
-          <div>
-            <h1>Welcome {current.email}</h1>
-            <button className="border-2 rounded-lg p-2" onClick={logout}>Logout</button>
-          </div>
-        ): (<div>
-          <Link href="/login" className="border-2 rounded-lg p-2" >Login</Link>
-        </div>)}
-        
+      <main className="flex justify-start min-h-screen min-w-screen">
+        <div className="bg-[url('/CU_Hero_image.png')] bg-cover bg-top bg-no-repeat h-[40vh] w-full"></div>
       </main>
-    </div>
   );
 }
