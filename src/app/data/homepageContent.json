@@ -1,0 +1,14 @@
+{
+    "contents": [
+        {
+            "heading": "Upload your comics", 
+            "description": "Share your creations with the comic community",
+            "image": "/CU_Hero_image.png"
+        },
+        {
+            "heading": "Read comics from indie creators",
+            "description": "Discover new talent and support indie creators",
+            "image": "/CU_Hero_image.png"
+        }
+    ]
+}

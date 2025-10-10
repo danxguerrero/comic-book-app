@@ -1,17 +1,17 @@
 import Image from 'next/image';
 
-export const ContentBox = () => {
+export const ContentBox = ({content}: {content: {heading: string, description: string, image: string}}) => {
     return (
         <div className="flex min-h-[40vh] border">
         <div className="min-h-full w-full">
           <div className="flex flex-col md:flex-row h-full items-center mx-12 gap-4 md:gap-0">
             <div className="w-full md:w-1/2">
-                <h2>Upload your comics</h2>
-                <p>Share your creations with the comic community</p>
+                <h2>{content.heading}</h2>
+                <p>{content.description}</p>
             </div>
             <div className="w-full md:w-1/2 h-full relative">
               <Image 
-                src="/CU_Hero_image.png" 
+                src={content.image} 
                 alt="ComicUnity" 
                 fill
                 className="object-cover object-center"
