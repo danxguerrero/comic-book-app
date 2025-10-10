@@ -3,10 +3,12 @@
 import { useAuth } from '../hooks/useAuth';
 import Link from 'next/link';
 import { ContentBox } from '../components/ContentBox'; 
+import homepageContent from "./data/homepageContent.json"
 
 export default function Home() {
   const { current, logout } = useAuth();
-  const testArray = new Array(10).fill(0).map((_, idx) => <ContentBox key={idx} />);
+  const homepageContents = homepageContent.contents;
+  const contentMap = homepageContents.map((content, idx) => <ContentBox key={idx} content={content}/>);
 
   return (
       <main className="min-h-screen">
@@ -20,7 +22,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col min-h-[50vh] flex-grow border border-red-500">
-          {testArray}
+          {contentMap}
         </div>
       </main>
   )
