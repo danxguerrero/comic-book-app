@@ -10,10 +10,10 @@ export const ContentBox = ({content, boxKey}: {content: {heading: string, descri
           <div className={clsx("flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-7xl mx-auto", {'md:flex-row-reverse' : textFirst})}>
             <div className="w-full md:w-1/2 flex flex-col justify-center space-y-6">
               <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-100 leading-tight">
                   {content.heading}
                 </h2>
-                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                <p className="text-lg md:text-xl text-neutral-200 leading-relaxed">
                   {content.description}
                 </p>
               </div>
