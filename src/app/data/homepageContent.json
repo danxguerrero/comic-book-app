@@ -3,12 +3,17 @@
         {
             "heading": "Upload your comics", 
             "description": "Share your creations with the comic community",
-            "image": "/CU_Hero_image.png"
+            "image": "/robot.png"
         },
         {
             "heading": "Read comics from indie creators",
             "description": "Discover new talent and support indie creators",
-            "image": "/CU_Hero_image.png"
+            "image": "/hero.png"
+        },
+        {
+            "heading": "Join the community",
+            "description": "Connect with other comic enthusiasts and share your thoughts",
+            "image": "/alien_warrior.png"
         }
     ]
 }
