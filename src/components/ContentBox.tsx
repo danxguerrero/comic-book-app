@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export const ContentBox = ({content}: {content: {heading: string, description: string, image: string}}) => {
+export const ContentBox = ({content}: {content: {heading: string, description: string, image: string, imageAlt: string}}) => {
     return (
         <div className="flex min-h-[40vh] border">
         <div className="min-h-full w-full">
@@ -12,7 +12,7 @@ export const ContentBox = ({content}: {content: {heading: string, description: s
             <div className="w-full md:w-1/2 h-full relative">
               <Image 
                 src={content.image} 
-                alt="ComicUnity" 
+                alt={content.imageAlt} 
                 fill
                 className="object-cover object-center"
               />

@@ -3,17 +3,20 @@
         {
             "heading": "Upload your comics", 
             "description": "Share your creations with the comic community",
-            "image": "/robot.png"
+            "image": "/robot.png",
+            "imageAlt": "Robot"
         },
         {
             "heading": "Read comics from indie creators",
             "description": "Discover new talent and support indie creators",
-            "image": "/hero.png"
+            "image": "/hero.png",
+            "imageAlt": "Super hero flying through the sky"
         },
         {
             "heading": "Join the community",
             "description": "Connect with other comic enthusiasts and share your thoughts",
-            "image": "/alien_warrior.png"
+            "image": "/alien_warrior.png",
+            "imageAlt": "Alien Warrior"
         }
     ]
 }
