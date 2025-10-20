@@ -28,7 +28,7 @@ export function useAuth() {
         // After successful login, get the user data
         const user = await account.get();
         setCurrent(user);
-        router.push('/');
+        router.push('/dashboard');
     };
 
     const logout = async (): Promise<void> => {
