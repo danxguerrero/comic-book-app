@@ -55,7 +55,7 @@ export const useUserProfile = () => {
         }
     }, []);
 
-    const upsertCurrentUserProfile = useCallback(
+    const updateCurrentUserProfile = useCallback(
         async (partial: Omit<UserProfile, 'userId' | 'username'> & { username: string }) => {
             if (!current) throw new Error('Not authenticated');
             setLoading(true);
@@ -99,6 +99,6 @@ export const useUserProfile = () => {
         profile,
         error,
         loadByUsername,
-        upsertCurrentUserProfile,
+        updateCurrentUserProfile,
     };
 };

@@ -71,7 +71,7 @@ export default function Navbar() {
                         {current ? (
                             <div className="flex items-center space-x-2">
                                 <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                                    <Link className="text-sm font-medium" href="/dashboard">
+                                    <Link className="text-sm font-medium" href="/profile">
                                         {current?.name?.charAt(0) || current?.email?.charAt(0) || 'U'}
                                     </Link>
                                 </div>
