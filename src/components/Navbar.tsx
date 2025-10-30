@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex items-center space-x-3">
-                        <Link href="/" className="flex items-center space-x-3">
+                        <Link href={current ? "/dashboard" : "/"} className="flex items-center space-x-3">
                             <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
                                 <span className="text-white font-bold text-lg">C</span>
                             </div>
@@ -71,9 +71,9 @@ export default function Navbar() {
                         {current ? (
                             <div className="flex items-center space-x-2">
                                 <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-                                    <span className="text-sm font-medium">
+                                    <Link className="text-sm font-medium" href="/profile">
                                         {current?.name?.charAt(0) || current?.email?.charAt(0) || 'U'}
-                                    </span>
+                                    </Link>
                                 </div>
                                 <button 
                                     onClick={logout}
