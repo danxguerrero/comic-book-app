@@ -14,7 +14,6 @@ export default function ProfileView({ username, editable }: Props) {
     const { current: user } = useAuth();
     const { current: profile, fetch, add, loading } = useUserProfile();
 
-    // TODO: #23 
     const addUserProfile = async () => {
         if (!user) return;
 
