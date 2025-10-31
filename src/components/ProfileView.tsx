@@ -15,7 +15,7 @@ export default function ProfileView({ username, editable }: Props) {
     const { current: profile, fetch, add, loading } = useUserProfile();
 
     // TODO: #23 
-    const handleAddUserProfile = async () => {
+    const addUserProfile = async () => {
         if (!user) return;
 
         const postUserProfileData = {
@@ -36,6 +36,9 @@ export default function ProfileView({ username, editable }: Props) {
     useEffect(() => {
         if (user?.email) {
             getProfile(user.email)
+        }
+        if (!profile) {
+            addUserProfile();
         }
     }, [user])
 
