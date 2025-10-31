@@ -37,7 +37,7 @@ export default function AuthForm({ handleSubmit, submitType }: AuthFormProps) {
                         type="password"
                         autoComplete="current-password"
                         required
-                        className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
+                        className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:text-gray-600 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                         placeholder="Enter your password"
                     />
                 </div>
