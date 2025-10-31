@@ -5,11 +5,11 @@ import { useAuth } from '../../hooks/useAuth';
 import ProfileView from '../../components/ProfileView';
 
 export default function Profile() {
-    const { current } = useAuth();
+    const { current: user } = useAuth();
 
     return (
         <ProtectedRoute>
-            <ProfileView editable />
+            <ProfileView />
         </ProtectedRoute>
 
     )
